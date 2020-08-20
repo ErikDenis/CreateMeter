@@ -1,9 +1,11 @@
 # CreateMeter
 
-[Русский](https://github.com/ErikDenis/CreateMeter#русский) язык
+[Русский](ErikDenis/CreateMeter#русский) язык
 
-[English](https://github.com/ErikDenis/CreateMeter#english) language
+[English](ErikDenis/CreateMeter#english) language
 
-#### Русский
+### Русский
 
-#### English
+Данная программа была создана, как простое создание виджетов на рабочий стол, с помощью сторонней программы "[Rainmeter](https://rainmeter.net)"
+
+### English
