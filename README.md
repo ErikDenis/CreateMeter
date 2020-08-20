@@ -1,8 +1,8 @@
 # CreateMeter
 
-[Русский](ErikDenis/CreateMeter#русский) язык
+[Русский](#русский) язык
 
-[English](ErikDenis/CreateMeter#english) language
+[English](#english) language
 
 ### Русский
 
