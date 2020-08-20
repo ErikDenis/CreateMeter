@@ -128,7 +128,7 @@
     <value>77, 24</value>
   </data>
   <data name="aboutToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Об Авторе</value>
+    <value>О проекте</value>
   </data>
   <data name="optionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 24</value>
