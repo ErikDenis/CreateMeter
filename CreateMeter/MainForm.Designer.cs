@@ -106,7 +106,7 @@ namespace CreateMeter
             // MenuStrip
             // 
             resources.ApplyResources(this.MenuStrip, "MenuStrip");
-            this.MenuStrip.GripMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.MenuStrip.GripMargin = new System.Windows.Forms.Padding(0);
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SkinsManagerToolStripMenuItem,
             this.aboutToolStripMenuItem1,
