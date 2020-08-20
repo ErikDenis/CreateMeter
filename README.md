@@ -1,8 +1,8 @@
 # CreateMeter
 
-[Русский](https://github.com/ErikDenis/CreateMeter/blob/master/README.md#русский) язык
+[Русский](https://github.com/ErikDenis/CreateMeter#русский) язык
 
-[English](https://github.com/ErikDenis/CreateMeter/blob/master/README.md#english) language
+[English](https://github.com/ErikDenis/CreateMeter#english) language
 
 ## Русский
 
