@@ -37,7 +37,7 @@ This program is creating as a simple solution for creating widgets on desktop us
 
 ### About developing
 I'm using IDE Microsoft Visual Studio Community 2019. I'm programming on C#, using Windows.Forms-constructor.
-All project files can be found in this git repository. You can simply clone the repository to your computer and open Visual Studio Solution (Create Master.sln).
+All project files can be found in this git-repository. You can simply clone the repository to your computer and open Visual Studio Solution (Create Master.sln).
 
 If you are interested in the program itself, you can download it *[here](#download)*.
 
@@ -51,7 +51,7 @@ Although I use an online translator, I try to translate in a way that even I und
 So far, the project is poorly optimized for localization.
 So I'll do it first.
 
-*Only for English speakers: Almost all the text was translated programmatically, and some of it was not even edited. Sorry in advance*
+*Only for English speakers: Almost all the text was translated programmatically, and some of it was not even edited (like this one). Sorry in advance*
 
 ### Download
 There should be a download link here, but there is no useable version yet.
