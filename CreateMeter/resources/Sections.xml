@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<sections>
+  <meter>
+    <string>
+      <name>String</name>
+      <description>MeterString</description>
+    </string>
+  </meter>
+  <measure>
+    <calc>
+      <name>Calculator</name>
+      <description>MeasureCalc</description>
+    </calc>
+  </measure>
+</sections>

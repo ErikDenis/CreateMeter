@@ -1,2 +1,4 @@
 #Visual Studio files
-/.vs/
+/.vs
+/CreateMeter/obj
+/CreateMeter/bin

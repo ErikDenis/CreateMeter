@@ -61,9 +61,7 @@ namespace CreateMeter {
 		}
 		
 		void SkinsManageToolStripMenuItemClick(object sender, EventArgs e) {
-			Form SkinManagerForm = new SkinManager(this);
-			SkinManagerForm.Show();
-			this.Enabled = false;
+			new SkinManager().Show();
 		}
 
         private void englishToolStripMenuItem_Clicked(object sender, EventArgs e) {
@@ -78,6 +76,14 @@ namespace CreateMeter {
 
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e) {
             System.Diagnostics.Process.Start("https://github.com/ErikDenis/CreateMeter");
+        }
+
+        private void globalVariablesToolStripMenuItem_Click(object sender, EventArgs e) {
+
+        }
+
+        private void AddSection_Click(object sender, EventArgs e) {
+            new AddSectionForm().Show();
         }
     }
 }

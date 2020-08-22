@@ -1,24 +1,22 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace CreateMeter {
 	public partial class SkinManager : Form {
-		public Form PpF;
-		public SkinManager(Form pF)
+		public SkinManager()
 		{
 			InitializeComponent();
-			
-			if (pF != null) {
-				PpF = pF;
-			}
-			
+			LoadSkinsListBox();
 		}
-		
-		void SkinManagerClosed(object sender, EventArgs e)
-		{
-			PpF.Focus();
-			PpF.Enabled = true;
+		private void LoadSkinsListBox() {
+			DirectoryInfo dir = new DirectoryInfo("C:\\Users\\" + Environment.UserName + "\\Documents\\Rainmeter\\Skins\\");
+			foreach (var item in dir.GetDirectories()) {
+				if (!item.Name.StartsWith("@")) {
+					SkinPacksListBox.Items.Add(item.Name);
+                }
+            }
 		}
 	}
 }

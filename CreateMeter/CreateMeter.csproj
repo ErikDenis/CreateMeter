@@ -47,6 +47,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddSectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSectionForm.Designer.cs">
+      <DependentUpon>AddSectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalVariables.Designer.cs">
+      <DependentUpon>GlobalVariables.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyStrings.ru.Designer.cs">
       <DependentUpon>MyStrings.ru.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -61,6 +73,11 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="resources\SectionsDescription.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SectionsDescription.resx</DependentUpon>
     </Compile>
     <Compile Include="SkinManager.cs">
       <SubType>Form</SubType>
@@ -85,6 +102,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddSectionForm.resx">
+      <DependentUpon>AddSectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalVariables.resx">
+      <DependentUpon>GlobalVariables.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,9 +122,16 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MyStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="resources\SectionsDescription.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SectionsDescription.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="SkinManager.resx">
       <DependentUpon>SkinManager.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\Sections.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

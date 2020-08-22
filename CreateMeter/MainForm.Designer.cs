@@ -35,7 +35,9 @@ namespace CreateMeter
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.treeView = new System.Windows.Forms.TreeView();
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SkinsManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.globalVariablesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -73,6 +75,7 @@ namespace CreateMeter
             resources.ApplyResources(this.AddSection, "AddSection");
             this.AddSection.Name = "AddSection";
             this.AddSection.UseVisualStyleBackColor = true;
+            this.AddSection.Click += new System.EventHandler(this.AddSection_Click);
             // 
             // RemoveSection
             // 
@@ -108,18 +111,31 @@ namespace CreateMeter
             resources.ApplyResources(this.MenuStrip, "MenuStrip");
             this.MenuStrip.GripMargin = new System.Windows.Forms.Padding(0);
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.SkinsManagerToolStripMenuItem,
+            this.fileToolStripMenuItem,
             this.aboutToolStripMenuItem1,
             this.optionsToolStripMenuItem});
             this.MenuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.MenuStrip.Name = "MenuStrip";
             // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SkinsManagerToolStripMenuItem,
+            this.globalVariablesToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
+            // 
             // SkinsManagerToolStripMenuItem
             // 
             this.SkinsManagerToolStripMenuItem.Name = "SkinsManagerToolStripMenuItem";
-            this.SkinsManagerToolStripMenuItem.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
             resources.ApplyResources(this.SkinsManagerToolStripMenuItem, "SkinsManagerToolStripMenuItem");
             this.SkinsManagerToolStripMenuItem.Click += new System.EventHandler(this.SkinsManageToolStripMenuItemClick);
+            // 
+            // globalVariablesToolStripMenuItem
+            // 
+            this.globalVariablesToolStripMenuItem.Name = "globalVariablesToolStripMenuItem";
+            resources.ApplyResources(this.globalVariablesToolStripMenuItem, "globalVariablesToolStripMenuItem");
+            this.globalVariablesToolStripMenuItem.Click += new System.EventHandler(this.globalVariablesToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem1
             // 
@@ -176,7 +192,6 @@ namespace CreateMeter
             this.PerformLayout();
 
 		}
-		private System.Windows.Forms.ToolStripMenuItem SkinsManagerToolStripMenuItem;
 		private System.Windows.Forms.MenuStrip MenuStrip;
 		private System.Windows.Forms.TreeView treeView;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -191,5 +206,8 @@ namespace CreateMeter
         private ToolStripMenuItem languageToolStripMenuItem;
         private ToolStripMenuItem englishToolStripMenuItem;
         private ToolStripMenuItem russianToolStripMenuItem;
+        private ToolStripMenuItem fileToolStripMenuItem;
+        private ToolStripMenuItem SkinsManagerToolStripMenuItem;
+        private ToolStripMenuItem globalVariablesToolStripMenuItem;
     }
 }
