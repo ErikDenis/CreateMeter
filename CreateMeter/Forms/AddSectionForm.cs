@@ -14,15 +14,18 @@ namespace CreateMeter {
         public AddSectionForm() {
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
-            XmlTextReader SectionsXML = new XmlTextReader("resources/Sections.xml");
+            XmlDocument SectionsXML = new XmlDocument();
+            SectionsXML.Load("resources/Sections.xml");
             LoadSectionsList(SectionsXML);
         }
 
-        private void LoadSectionsList(XmlTextReader XML) {
-            while (XML.Read()) {
-                if (XML.NodeType == XmlNodeType.Element) {
-                    Console.WriteLine(XML.LocalName);
-                }
+        private void LoadSectionsList(XmlDocument XML) {
+            string SectionType = comboBox1.Text.Replace("s", "");
+            listBox1.Items.Clear();
+            XmlNodeList NList = XML.GetElementsByTagName(SectionType);
+            Console.WriteLine(NList.Count);
+            foreach (XmlElement section in NList) {
+                listBox1.Items.Add(section.LocalName);
             }
         }
     }

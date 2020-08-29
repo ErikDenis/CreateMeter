@@ -47,24 +47,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddSectionForm.cs">
+    <Compile Include="Forms\AddSectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddSectionForm.Designer.cs">
+    <Compile Include="Forms\AddSectionForm.Designer.cs">
       <DependentUpon>AddSectionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GlobalVariables.cs">
+    <Compile Include="Forms\GlobalVariables.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GlobalVariables.Designer.cs">
+    <Compile Include="Forms\GlobalVariables.Designer.cs">
       <DependentUpon>GlobalVariables.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyStrings.ru.Designer.cs">
+    <Compile Include="resources\MyStrings.ru.Designer.cs">
       <DependentUpon>MyStrings.ru.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="MyStrings.Designer.cs">
+    <Compile Include="resources\MyStrings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MyStrings.resx</DependentUpon>
@@ -79,16 +79,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SectionsDescription.resx</DependentUpon>
     </Compile>
-    <Compile Include="SkinManager.cs">
+    <Compile Include="Forms\SkinManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SkinManager.Designer.cs">
+    <Compile Include="Forms\SkinManager.Designer.cs">
       <DependentUpon>SkinManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -102,23 +102,23 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AddSectionForm.resx">
+    <EmbeddedResource Include="Forms\AddSectionForm.resx">
       <DependentUpon>AddSectionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GlobalVariables.resx">
+    <EmbeddedResource Include="Forms\GlobalVariables.resx">
       <DependentUpon>GlobalVariables.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.ru.resx">
+    <EmbeddedResource Include="Forms\MainForm.ru.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyStrings.ru.resx">
+    <EmbeddedResource Include="resources\MyStrings.ru.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MyStrings.ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyStrings.resx">
+    <EmbeddedResource Include="resources\MyStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MyStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -126,12 +126,14 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SectionsDescription.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SkinManager.resx">
+    <EmbeddedResource Include="Forms\SkinManager.resx">
       <DependentUpon>SkinManager.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="resources\Sections.xml" />
+    <EmbeddedResource Include="resources\Sections.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

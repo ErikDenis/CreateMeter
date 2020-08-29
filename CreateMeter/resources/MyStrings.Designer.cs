@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CreateMeter {
+namespace CreateMeter.resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace CreateMeter {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CreateMeter.MyStrings", typeof(MyStrings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CreateMeter.resources.MyStrings", typeof(MyStrings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

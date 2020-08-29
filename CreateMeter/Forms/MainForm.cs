@@ -26,8 +26,8 @@ namespace CreateMeter {
             }
             if (ShowMssg) {
                 MessageBox.Show(
-                    MyStrings.LangSwitchMssg,
-                    MyStrings.LangSwitchTitle,
+                    resources.MyStrings.LangSwitchMssg,
+                    resources.MyStrings.LangSwitchTitle,
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                     );

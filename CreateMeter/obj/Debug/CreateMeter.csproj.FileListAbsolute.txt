@@ -5,13 +5,15 @@ F:\GitHub Reps\CreateMeter\CreateMeter\bin\Debug\ru\CreateMeter.resources.dll
 F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.AddSectionForm.resources
 F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.GlobalVariables.resources
 F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.MainForm.resources
-F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.MyStrings.resources
 F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.resources.SectionsDescription.resources
 F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.SkinManager.resources
 F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.MainForm.ru.resources
-F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.MyStrings.ru.resources
 F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.csproj.GenerateResource.cache
 F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.csproj.CoreCompileInputs.cache
 F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\ru\CreateMeter.resources.dll
 F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.exe
 F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.pdb
+F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.resources.MyStrings.resources
+F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.resources.MyStrings.ru.resources
+F:\GitHub Reps\CreateMeter\CreateMeter\bin\Debug\resources\Sections.xml
+F:\GitHub Reps\CreateMeter\CreateMeter\obj\Debug\CreateMeter.csprojAssemblyReference.cache
